@@ -1,4 +1,3 @@
-import "./App.css";
 import { Header } from "@/components/common/Header.tsx";
 import HeroSection from "@/components/common/Hero.tsx";
 import { Skills } from "@/components/common/Skills.tsx";
