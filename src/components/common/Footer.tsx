@@ -1,4 +1,5 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,15 +13,15 @@ export function Footer() {
         </div>
         <div className="flex justify-center space-x-4 mb-4">
           <a href="https://linkedin.com" className="hover:text-primary">
-            <Linkedin className="h-5 w-5" />
+            <FaLinkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </a>
           <a href="https://github.com" className="hover:text-primary">
-            <Github className="h-5 w-5" />
+            <FaGithub className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </a>
           <a href="https://twitter.com" className="hover:text-primary">
-            <Twitter className="h-5 w-5" />
+            <FaXTwitter className="h-5 w-5" />
             <span className="sr-only">Twitter</span>
           </a>
         </div>
@@ -30,9 +31,6 @@ export function Footer() {
           </a>
           <a href="/terms-of-service" className="hover:underline">
             Terms of Service
-          </a>
-          <a href="/contact" className="hover:underline">
-            Contact
           </a>
         </div>
       </div>

@@ -1,8 +1,23 @@
 "use client";
 
 import { Code, Menu, X } from "lucide-react";
-import { useState } from "react";
+import React, { useState } from "react";
 import ThemeToggle from "@/components/theme-toggle.tsx";
+
+type headerInfo = {
+  title: string;
+  logo: React.JSX.Element | null;
+};
+
+// interface HeaderProps {
+//   name: string;
+//   logo: React.JSX.Element | null;
+// }
+
+const exampleHeaderInfo: headerInfo = {
+  title: "K-Mahlangu",
+  logo: <Code className="h-8 w-8 text-primary" />,
+};
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +32,9 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <Code className="h-8 w-8 text-primary" />
+              {exampleHeaderInfo.logo}
               <span className="ml-2 text-xl font-bold text-foreground">
-                DevPortfolio
+                {exampleHeaderInfo.title}
               </span>
             </a>
           </div>

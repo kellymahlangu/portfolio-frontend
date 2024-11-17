@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Code, Database, FileJson, Globe, Laptop } from "lucide-react";
+import React from "react";
 
 interface Experience {
   company: string;
@@ -11,7 +12,7 @@ interface Experience {
   skills: string[];
 }
 
-const skillIcons: { [key: string]: JSX.Element } = {
+const skillIcons: { [key: string]: React.JSX.Element } = {
   JavaScript: <Code className="h-4 w-4" />,
   React: <Globe className="h-4 w-4" />,
   "Node.js": <FileJson className="h-4 w-4" />,

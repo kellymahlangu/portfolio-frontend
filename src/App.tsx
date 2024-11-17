@@ -8,6 +8,7 @@ import Contact from "@/components/common/Contact.tsx";
 import { Footer } from "@/components/common/Footer.tsx";
 
 function App() {
+  console.log("Server action done here");
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
